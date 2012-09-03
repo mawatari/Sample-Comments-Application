@@ -29,7 +29,9 @@ class AppController extends Controller {
  * @access public
  */
 	public $components = array(
-		'RequestHandler', 'Session', 'Auth'
+		'RequestHandler', 
+		'Session', 
+		'Auth'
 	);
 /**
  * Helpers List
@@ -41,7 +43,8 @@ class AppController extends Controller {
 		'Session', 
 		'Html', 
 		'Form', 
-		'Js' => array('Jquery'));
+		'Js' => array('Jquery')
+		);
 
 	public function beforeFilter() {
 		$this->Auth->authenticate = array(
@@ -62,8 +65,8 @@ class AppController extends Controller {
 			$this->set('isAuthorized', ($this->Auth->user('id') != ''));
 		}
 			
-	}
-	
+	}	
+
 	public function isRequestedAction() {
 		return array_key_exists('requested', $this->params);
 	}
@@ -74,4 +77,4 @@ class AppController extends Controller {
 
 
 }
-?>
+

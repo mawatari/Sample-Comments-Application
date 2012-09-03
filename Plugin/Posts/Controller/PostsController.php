@@ -15,6 +15,8 @@
  * @license   MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
+App::uses('PostsAppController', 'Posts.Controller'); 
+ 
 class PostsController extends PostsAppController {
 
 	var $name = 'Posts';

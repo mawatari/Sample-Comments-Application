@@ -13,6 +13,8 @@
  * @link      http://github.com/CakeDC/Sample-Comments-Application
  * @license   MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
+
+App::uses('PostsAppModel', 'Posts.Model');
  
 class Post extends PostsAppModel {
 
